@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destek / Support — Sudoku: Hold to Peek</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    a { color: #6fb3ff; }
+    hr { border-color: #333; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.2rem; margin-top: 2em; }
+  .updated { color: #888; font-size: 0.9rem; margin-bottom: 2em; }
+  .lang-toggle { margin-bottom: 2em; }
+  .lang-toggle button {
+    padding: 6px 14px;
+    margin-right: 8px;
+    border-radius: 6px;
+    border: 1px solid #999;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .lang-toggle button.active { background: #3B82F6; color: #fff; border-color: #3B82F6; }
+  #en { display: none; }
+  .faq dt { font-weight: 600; margin-top: 1.2em; }
+  .faq dd { margin: 0.3em 0 0; color: inherit; }
+  .contact-box {
+    padding: 16px 20px;
+    border-radius: 10px;
+    background: rgba(59,130,246,0.1);
+    border: 1px solid rgba(59,130,246,0.3);
+    margin: 1.5em 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-toggle">
+  <button id="btn-tr" class="active" onclick="showLang('tr')">Türkçe</button>
+  <button id="btn-en" onclick="showLang('en')">English</button>
+</div>
+
+<div id="tr">
+  <h1>Destek</h1>
+  <p class="updated">Sudoku: Hold to Peek</p>
+
+  <div class="contact-box">
+    <strong>İletişim:</strong> Bir sorun mu yaşıyorsun, önerin mi var? Bize yaz:
+    <a href="mailto:zafertozar@gmail.com">zafertozar@gmail.com</a><br>
+    Genellikle 2-3 iş günü içinde dönüş yapıyoruz.
+  </div>
+
+  <h2>Sık Sorulan Sorular</h2>
+  <dl class="faq">
+    <dt>Hold-to-Peek nasıl kullanılır?</dt>
+    <dd>Boş bir hücreye parmağınızı yaklaşık yarım saniye basılı tutun. O satır, sütun ve 3x3 kutuda eksik olan rakamlar geçici bir pop-up'ta belirir. Parmağınızı çektiğinizde pop-up kaybolur.</dd>
+
+    <dt>Hold-to-Peek hakkım bitti, ne yapmalıyım?</dt>
+    <dd>Her oyun 10 ücretsiz ipucu hakkıyla başlar. Hakkınız bitince, kısa bir reklam izleyerek 5 hak daha kazanabilirsiniz.</dd>
+
+    <dt>3 hata hakkım bitince oyun bitiyor, devam edebilir miyim?</dt>
+    <dd>Evet — oyun bittiğinde çıkan ekranda "Reklam izle, bir hakkın daha olsun" seçeneğiyle kısa bir reklam izleyip kaldığınız yerden devam edebilirsiniz.</dd>
+
+    <dt>Reklam beklediğim halde çıkmıyor, sorun mu var?</dt>
+    <dd>Reklamlar internet bağlantısı gerektirir ve bazen birkaç saniye yüklenmesi gerekir. Kısa süre sonra tekrar deneyin. Sorun devam ederse bize e-posta ile ulaşın.</dd>
+
+    <dt>Tema veya dili nasıl değiştiririm?</dt>
+    <dd>Ana ekranda sağ üstteki dişli (ayarlar) simgesine dokunarak Açık/Koyu tema ve Türkçe/İngilizce dil seçimini değiştirebilirsiniz.</dd>
+
+    <dt>İlerlememi/istatistiklerimi nasıl sıfırlarım?</dt>
+    <dd>Uygulamayı cihazınızdan silip yeniden yüklemek tüm yerel verileri (ilerleme, istatistikler, ayarlar) sıfırlar. Bu veriler yalnızca cihazınızda saklanır, herhangi bir sunucuda tutulmaz.</dd>
+  </dl>
+
+  <h2>Gizlilik</h2>
+  <p>Uygulamanın gizlilik politikasına <a href="privacy-policy.html">buradan</a> ulaşabilirsiniz.</p>
+</div>
+
+<div id="en">
+  <h1>Support</h1>
+  <p class="updated">Sudoku: Hold to Peek</p>
+
+  <div class="contact-box">
+    <strong>Contact:</strong> Having an issue or have a suggestion? Write to us at:
+    <a href="mailto:zafertozar@gmail.com">zafertozar@gmail.com</a><br>
+    We typically respond within 2-3 business days.
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <dl class="faq">
+    <dt>How does Hold-to-Peek work?</dt>
+    <dd>Press and hold an empty cell for about half a second. The digits missing from that row, column, and 3x3 box will appear in a floating popup. Release your finger to dismiss it.</dd>
+
+    <dt>I'm out of Hold-to-Peek credits — what now?</dt>
+    <dd>Each game starts with 10 free peek credits. Once used up, you can watch a short ad to earn 5 more.</dd>
+
+    <dt>The game ends after 3 mistakes — can I continue?</dt>
+    <dd>Yes — on the game-over screen, you can watch a short ad via "Watch ad for one more life" to resume the same game instead of starting over.</dd>
+
+    <dt>An ad didn't show when I expected one — is something wrong?</dt>
+    <dd>Ads require an internet connection and sometimes take a few seconds to load. Please try again shortly. If the issue persists, contact us by email.</dd>
+
+    <dt>How do I change the theme or language?</dt>
+    <dd>Tap the gear (settings) icon in the top-right of the main screen to switch between Light/Dark theme and Turkish/English.</dd>
+
+    <dt>How do I reset my progress/stats?</dt>
+    <dd>Deleting and reinstalling the app resets all local data (progress, stats, settings). This data is stored only on your device and never on any server.</dd>
+  </dl>
+
+  <h2>Privacy</h2>
+  <p>You can find the app's privacy policy <a href="privacy-policy.html">here</a>.</p>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('tr').style.display = lang === 'tr' ? 'block' : 'none';
+    document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+  }
+</script>
+
+</body>
+</html>
